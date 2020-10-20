@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "ir8IEUK4BTQYbiPr1l8NHYtfLl+/P6Yho7izKdBmelxkxdT5JYGcPvtLVUCrdxPyFFoVaxPqZj3MmcDn4Zosyg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\altran\\Desktop\\PIM_desktop\\PIM_Desktop_Business\\PIM_Desktop_BLL.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\altran\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\altran\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
