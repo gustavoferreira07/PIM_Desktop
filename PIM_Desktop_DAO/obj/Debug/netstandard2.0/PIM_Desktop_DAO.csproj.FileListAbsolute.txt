@@ -10,3 +10,9 @@ C:\Users\altran\Desktop\PIM_desktop\PIM_Desktop_DAO\bin\Debug\netstandard2.0\Acc
 C:\Users\altran\Desktop\PIM_desktop\PIM_Desktop_DAO\bin\Debug\netstandard2.0\System.Deployment.dll
 C:\Users\altran\Desktop\PIM_desktop\PIM_Desktop_DAO\bin\Debug\netstandard2.0\System.Runtime.Serialization.Formatters.Soap.dll
 C:\Users\altran\Desktop\PIM_desktop\PIM_Desktop_DAO\obj\Debug\netstandard2.0\PIM_Desktop_DAO.csproj.CopyComplete
+C:\Users\altran\Desktop\PIM_desktop\PIM_Desktop_DAO\bin\Debug\netstandard2.0\PIM_Desktop_DAO.pdb
+C:\Users\altran\Desktop\PIM_desktop\PIM_Desktop_DAO\bin\Debug\netstandard2.0\PIM_Desktop_MODEL.dll
+C:\Users\altran\Desktop\PIM_desktop\PIM_Desktop_DAO\bin\Debug\netstandard2.0\PIM_Desktop_MODEL.pdb
+C:\Users\altran\Desktop\PIM_desktop\PIM_Desktop_DAO\obj\Debug\netstandard2.0\PIM_Desktop_DAO.csproj.CoreCompileInputs.cache
+C:\Users\altran\Desktop\PIM_desktop\PIM_Desktop_DAO\obj\Debug\netstandard2.0\PIM_Desktop_DAO.dll
+C:\Users\altran\Desktop\PIM_desktop\PIM_Desktop_DAO\obj\Debug\netstandard2.0\PIM_Desktop_DAO.pdb

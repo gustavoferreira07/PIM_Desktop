@@ -1,0 +1,9 @@
+C:\Users\altran\Desktop\PIM_desktop\PIM_Desktop_MODEL\bin\Debug\netstandard2.0\PIM_Desktop_MODEL.deps.json
+C:\Users\altran\Desktop\PIM_desktop\PIM_Desktop_MODEL\bin\Debug\netstandard2.0\PIM_Desktop_MODEL.dll
+C:\Users\altran\Desktop\PIM_desktop\PIM_Desktop_MODEL\bin\Debug\netstandard2.0\PIM_Desktop_MODEL.pdb
+C:\Users\altran\Desktop\PIM_desktop\PIM_Desktop_MODEL\obj\Debug\netstandard2.0\PIM_Desktop_MODEL.csprojAssemblyReference.cache
+C:\Users\altran\Desktop\PIM_desktop\PIM_Desktop_MODEL\obj\Debug\netstandard2.0\PIM_Desktop_MODEL.AssemblyInfoInputs.cache
+C:\Users\altran\Desktop\PIM_desktop\PIM_Desktop_MODEL\obj\Debug\netstandard2.0\PIM_Desktop_MODEL.AssemblyInfo.cs
+C:\Users\altran\Desktop\PIM_desktop\PIM_Desktop_MODEL\obj\Debug\netstandard2.0\PIM_Desktop_MODEL.csproj.CoreCompileInputs.cache
+C:\Users\altran\Desktop\PIM_desktop\PIM_Desktop_MODEL\obj\Debug\netstandard2.0\PIM_Desktop_MODEL.dll
+C:\Users\altran\Desktop\PIM_desktop\PIM_Desktop_MODEL\obj\Debug\netstandard2.0\PIM_Desktop_MODEL.pdb
