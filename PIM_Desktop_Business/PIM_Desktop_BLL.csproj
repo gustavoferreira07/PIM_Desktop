@@ -4,4 +4,9 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\PIM_Desktop_DAO\PIM_Desktop_DAO.csproj" />
+    <ProjectReference Include="..\PIM_Desktop_MODEL\PIM_Desktop_MODEL.csproj" />
+  </ItemGroup>
+
 </Project>
