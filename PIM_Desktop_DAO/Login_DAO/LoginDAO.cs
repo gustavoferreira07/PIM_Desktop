@@ -2,6 +2,7 @@
 using System.Data;
 using System.Data.SqlClient;
 using System;
+using PIM_Desktop_MODEL.Util;
 
 namespace PIM_Desktop_DAO.Login_DAO
 {
@@ -9,6 +10,8 @@ namespace PIM_Desktop_DAO.Login_DAO
     {
         public bool ValidaLogin(LoginModel loginModel)
         {
+            SessaoUsuarioLogado sessao = new SessaoUsuarioLogado();
+
             using (ConexaoBD con = new ConexaoBD())
             {
                 try
@@ -18,9 +21,13 @@ namespace PIM_Desktop_DAO.Login_DAO
                     cmd.Parameters.Add("@usu", SqlDbType.VarChar).Value = loginModel.Usuario;
                     cmd.Parameters.Add("@senha", SqlDbType.VarChar).Value = loginModel.Senha;
 
-                    dr = cmd.ExecuteReader();
+                    dr = cmd.ExecuteReader();                    
                     if (dr.HasRows)
+                    {
+                        //sessao.IdUsuario = (int)dr[1];
+                        //sessao.NomeUsuario = dr[2].ToString();
                         return true;
+                    }                       
                     else
                         return false;
                 }

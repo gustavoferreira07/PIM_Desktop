@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PIM_Desktop_VIEW
@@ -15,6 +8,16 @@ namespace PIM_Desktop_VIEW
         public MenuPrincipal()
         {
             InitializeComponent();
+        }
+
+        private void cadastroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CadastroCliente objForm = new CadastroCliente();
+            objForm.TopLevel = false;
+            panelPrincipal.Controls.Add(objForm);
+            objForm.FormBorderStyle = FormBorderStyle.Sizable;
+            objForm.Dock = DockStyle.Fill;
+            objForm.Show();
         }
     }
 }

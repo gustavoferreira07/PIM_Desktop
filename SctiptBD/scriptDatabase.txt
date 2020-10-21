@@ -1,0 +1,88 @@
+create database db_blockchain
+
+use db_blockchain
+
+
+create table tb_login
+(
+Id int identity,
+IdCliente int,
+usuario varchar(50),
+senha varchar(50),
+FOREIGN KEY (IdCliente) REFERENCES tb_cliente(IdCliente)
+)
+
+create table tb_plano
+(
+IdPlano int identity primary key,
+NomePlano varchar(50),
+Descricao varchar(500),
+ValorPlano decimal(10,2)
+)
+
+create table tb_cliente
+(
+IdCliente int identity primary key,
+Email varchar(100),
+Nome varchar(200),
+DataNascimento datetime,
+Cpf varchar(15),
+IdPlano int,
+FOREIGN KEY (IdPlano) REFERENCES tb_plano(IdPlano)
+)
+
+create table tb_endereco
+(
+Id int identity,
+Logradouro varchar(300),
+cep varchar(10),
+IdCliente int,
+FOREIGN KEY (IdCliente) REFERENCES tb_cliente(IdCliente)
+)
+
+create table tb_carteira
+(
+Id int identity,
+IdCliente int,
+IdMoeda int,
+QuantidadeAcoes decimal(10,2),
+FOREIGN KEY (IdCliente) REFERENCES tb_cliente(IdCliente)
+)
+
+
+create table tb_transacao
+(
+Id int primary key,
+DataTransacao datetime,
+IdCliente int,
+TipoTransacao int,
+IdMoeda int,
+QuantidadeAcoes decimal(10,2)
+FOREIGN KEY (IdCliente) REFERENCES tb_cliente(IdCliente),
+FOREIGN KEY (TipoTransacao) REFERENCES tb_tipo_transacao(Id),
+FOREIGN KEY (IdMoeda) REFERENCES tb_moeda(Id)
+)
+
+create table tb_moeda
+(
+Id int identity primary key,
+NomeMoeda varchar(50),
+ValorMoeda decimal(10,2)
+)
+
+create table tb_tipo_transacao
+(
+Id int identity primary key,
+Descricao varchar(50)
+)
+
+
+insert into tb_tipo_transacao(Descricao) values('Compra')
+insert into tb_tipo_transacao(Descricao) values('Venda')
+
+insert into tb_login(usuario, senha) values('gusta','12345')
+
+insert into tb_plano(NomePlano,Descricao,ValorPlano) values('Standard','plano mais básico',50.99)
+insert into tb_plano(NomePlano,Descricao,ValorPlano) values('Premiun','plano Intermediário',75.99)
+insert into tb_plano(NomePlano,Descricao,ValorPlano) values('Gold','plano mais completo',89.99)
+

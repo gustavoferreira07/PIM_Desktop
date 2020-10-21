@@ -25,3 +25,4 @@ C:\Users\altran\Desktop\PIM_desktop\PIM_Desktop_VIEW\bin\Debug\System.Configurat
 C:\Users\altran\Desktop\PIM_desktop\PIM_Desktop_VIEW\bin\Debug\System.Security.AccessControl.xml
 C:\Users\altran\Desktop\PIM_desktop\PIM_Desktop_VIEW\bin\Debug\System.Security.Permissions.xml
 C:\Users\altran\Desktop\PIM_desktop\PIM_Desktop_VIEW\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\altran\Desktop\PIM_desktop\PIM_Desktop_VIEW\obj\Debug\PIM_Desktop_VIEW.CadastroCliente.resources

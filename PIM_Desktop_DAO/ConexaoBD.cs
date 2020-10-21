@@ -7,8 +7,7 @@ using System.Windows.Forms;
 namespace PIM_Desktop_DAO
 {
     public class ConexaoBD: IDisposable
-    {
-        string connec = ConfigurationManager.ConnectionStrings["connectionBD"].ConnectionString;
+    {     
         SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["connectionBD"].ConnectionString);
 
         public SqlConnection ConectarBD()
