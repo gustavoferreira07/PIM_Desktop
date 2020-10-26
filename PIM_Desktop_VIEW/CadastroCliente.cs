@@ -1,13 +1,6 @@
 ﻿using PIM_Desktop_BLL.ClienteBLL;
 using PIM_Desktop_MODEL;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PIM_Desktop_VIEW
@@ -18,11 +11,6 @@ namespace PIM_Desktop_VIEW
         public CadastroCliente()
         {
             InitializeComponent();
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void cbbPlano_SelectedIndexChanged(object sender, EventArgs e)
@@ -43,8 +31,7 @@ namespace PIM_Desktop_VIEW
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {
-            var oi = cbbPlano.SelectedIndex;
+        {            
             ClienteModel clienteModel = new ClienteModel()
             {
                 Nome = txtNome.Text,
@@ -54,14 +41,47 @@ namespace PIM_Desktop_VIEW
                 IdPlano = (int)cbbPlano.SelectedIndex
             };
 
-            if (clienteBLL.AdicionaCliente(clienteModel))
+            EnderecoModel enderecoModel = new EnderecoModel()
+            {
+                Logradouro = txtEndereco.Text,
+                Cep = txtCep.Text
+            };
+
+            TelefoneModel telefoneModel = new TelefoneModel()
+            {
+                Telefone = txtTelefone.Text
+            };
+
+            LoginModel loginModel = new LoginModel()
+            {
+                Usuario = txtLogin.Text,
+                Senha = txtSenha.Text
+            };
+
+
+            if (clienteBLL.AdicionaCliente(clienteModel,enderecoModel, telefoneModel, loginModel))
             {
                 MessageBox.Show(this, "Cliente cadastrado com sucesso !", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                LimparCampos();
             }
             else
             {
                 MessageBox.Show(this, "Erro ao cadastrar cliente!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+        }
+        public void LimparCampos()
+        {
+            txtCep.Clear();
+            txtConfirmaSenha.Clear();
+            txtCpf.Clear();
+            txtData.Clear();
+            txtEmail.Clear();
+            txtEndereco.Clear();
+            txtLogin.Clear();
+            txtNome.Clear();
+            txtSenha.Clear();
+            txtTelefone.Clear();
+            txtNome.Focus();
         }
     }
 }

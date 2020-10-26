@@ -35,6 +35,9 @@
             this.relatóriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.relatórioClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.relatórioDeTransaçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.transaçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lançarTransaçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultarTransaçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelPrincipal = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -44,7 +47,8 @@
             this.menuStrip1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.clientesToolStripMenuItem,
-            this.relatóriosToolStripMenuItem});
+            this.relatóriosToolStripMenuItem,
+            this.transaçõesToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 25);
@@ -72,6 +76,7 @@
             this.consultaToolStripMenuItem.Name = "consultaToolStripMenuItem";
             this.consultaToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.consultaToolStripMenuItem.Text = "Consulta";
+            this.consultaToolStripMenuItem.Click += new System.EventHandler(this.consultaToolStripMenuItem_Click);
             // 
             // relatóriosToolStripMenuItem
             // 
@@ -94,6 +99,28 @@
             this.relatórioDeTransaçõesToolStripMenuItem.Size = new System.Drawing.Size(215, 22);
             this.relatórioDeTransaçõesToolStripMenuItem.Text = "Relatório de transações";
             // 
+            // transaçõesToolStripMenuItem
+            // 
+            this.transaçõesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.lançarTransaçãoToolStripMenuItem,
+            this.consultarTransaçõesToolStripMenuItem});
+            this.transaçõesToolStripMenuItem.Name = "transaçõesToolStripMenuItem";
+            this.transaçõesToolStripMenuItem.Size = new System.Drawing.Size(86, 21);
+            this.transaçõesToolStripMenuItem.Text = "Transações";
+            // 
+            // lançarTransaçãoToolStripMenuItem
+            // 
+            this.lançarTransaçãoToolStripMenuItem.Name = "lançarTransaçãoToolStripMenuItem";
+            this.lançarTransaçãoToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+            this.lançarTransaçãoToolStripMenuItem.Text = "Lançar transação";
+            this.lançarTransaçãoToolStripMenuItem.Click += new System.EventHandler(this.lançarTransaçãoToolStripMenuItem_Click);
+            // 
+            // consultarTransaçõesToolStripMenuItem
+            // 
+            this.consultarTransaçõesToolStripMenuItem.Name = "consultarTransaçõesToolStripMenuItem";
+            this.consultarTransaçõesToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+            this.consultarTransaçõesToolStripMenuItem.Text = "Consultar transações";
+            // 
             // panelPrincipal
             // 
             this.panelPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -112,7 +139,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MenuPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "MenuPrincipal";
+            this.Text = "Menu principal";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -131,5 +158,8 @@
         private System.Windows.Forms.ToolStripMenuItem relatórioClienteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem relatórioDeTransaçõesToolStripMenuItem;
         private System.Windows.Forms.Panel panelPrincipal;
+        private System.Windows.Forms.ToolStripMenuItem transaçõesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem lançarTransaçãoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem consultarTransaçõesToolStripMenuItem;
     }
 }

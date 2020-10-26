@@ -9,9 +9,7 @@ namespace PIM_Desktop_DAO.Login_DAO
     public class LoginDAO
     {
         public bool ValidaLogin(LoginModel loginModel)
-        {
-            SessaoUsuarioLogado sessao = new SessaoUsuarioLogado();
-
+        {          
             using (ConexaoBD con = new ConexaoBD())
             {
                 try
@@ -24,8 +22,12 @@ namespace PIM_Desktop_DAO.Login_DAO
                     dr = cmd.ExecuteReader();                    
                     if (dr.HasRows)
                     {
-                        //sessao.IdUsuario = (int)dr[1];
-                        //sessao.NomeUsuario = dr[2].ToString();
+                        while (dr.Read())
+                        {
+                            SessaoUsuarioLogado.IdUsuario = (int)dr[1];
+                            SessaoUsuarioLogado.NomeUsuario = dr[2].ToString();
+                        }
+
                         return true;
                     }                       
                     else

@@ -57,7 +57,8 @@ DataTransacao datetime,
 IdCliente int,
 TipoTransacao int,
 IdMoeda int,
-QuantidadeAcoes decimal(10,2)
+QuantidadeAcoes decimal(10,2),
+
 FOREIGN KEY (IdCliente) REFERENCES tb_cliente(IdCliente),
 FOREIGN KEY (TipoTransacao) REFERENCES tb_tipo_transacao(Id),
 FOREIGN KEY (IdMoeda) REFERENCES tb_moeda(Id)
@@ -74,6 +75,14 @@ create table tb_tipo_transacao
 (
 Id int identity primary key,
 Descricao varchar(50)
+)
+
+create table tb_telefone
+(
+Id int identity primary key,
+IdCliente int,
+telefone varchar(16),
+FOREIGN KEY (IdCliente) REFERENCES tb_cliente(IdCliente)
 )
 
 

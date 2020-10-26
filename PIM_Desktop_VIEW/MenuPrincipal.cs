@@ -19,5 +19,25 @@ namespace PIM_Desktop_VIEW
             objForm.Dock = DockStyle.Fill;
             objForm.Show();
         }
+
+        private void consultaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ConsultaCliente objForm = new ConsultaCliente();
+            objForm.TopLevel = false;
+            panelPrincipal.Controls.Add(objForm);
+            objForm.FormBorderStyle = FormBorderStyle.Sizable;
+            objForm.Dock = DockStyle.Fill;
+            objForm.Show();
+        }
+
+        private void lançarTransaçãoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LancamentoTransacao objForm = new LancamentoTransacao();
+            objForm.TopLevel = false;
+            panelPrincipal.Controls.Add(objForm);
+            objForm.FormBorderStyle = FormBorderStyle.Sizable;
+            objForm.Dock = DockStyle.Fill;
+            objForm.Show();
+        }
     }
 }

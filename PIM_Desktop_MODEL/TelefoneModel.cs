@@ -4,11 +4,10 @@ using System.Text;
 
 namespace PIM_Desktop_MODEL
 {
-    public class LoginModel
+    public class TelefoneModel
     {
-        public int Id { get; set; }
-        public string Usuario { get; set; }
-        public string Senha { get; set; }
+        public int id { get; set; }
         public int IdCliente { get; set; }
+        public string  Telefone { get; set; }
     }
 }
