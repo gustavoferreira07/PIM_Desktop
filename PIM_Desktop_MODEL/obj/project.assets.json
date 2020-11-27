@@ -180,7 +180,8 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\altran\\.nuget\\packages\\": {}
+    "C:\\Users\\altran\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
@@ -191,6 +192,9 @@
       "packagesPath": "C:\\Users\\altran\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\altran\\Desktop\\PIM_desktop\\PIM_Desktop_MODEL\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
         "C:\\Users\\altran\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"

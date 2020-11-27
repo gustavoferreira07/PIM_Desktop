@@ -52,7 +52,7 @@ FOREIGN KEY (IdCliente) REFERENCES tb_cliente(IdCliente)
 
 create table tb_transacao
 (
-Id int primary key,
+Id int primary key identity,
 DataTransacao datetime,
 IdCliente int,
 TipoTransacao int,
